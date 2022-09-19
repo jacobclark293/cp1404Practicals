@@ -8,22 +8,23 @@ import random
 
 def main():
     score = float(input("Enter score: "))
-    score = returns_score(score)
-    if score < 0 or score > 100:
-        print("Invalid score")
-    elif score >= 90:
-        print("Excellent")
-    elif score >= 50:
-        print("Passable")
-    else:
-        print("Bad")
+    result = returns_result(score)
+    print(result)
 
     score = random.randint(0, 100)
     print(score)
 
 
-def returns_score(score):
-    return score
+def returns_result(score):
+    if score < 0 or score > 100:
+        result = "Invalid score"
+    elif score >= 90:
+        result = "Excellent"
+    elif score >= 50:
+        result = "Passable"
+    else:
+        result = "Bad"
+    return result
 
 
 main()
