@@ -22,8 +22,6 @@ price = INITIAL_PRICE
 number_of_days = 0
 print(f"Starting price: ${INITIAL_PRICE}", file=out_file)
 
-
-
 while price >= MIN_PRICE and price <= MAX_PRICE:
     price_change = 0
     number_of_days = number_of_days + 1
