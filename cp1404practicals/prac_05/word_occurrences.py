@@ -1,3 +1,11 @@
+"""
+Word Occurrences
+I did this part of the prac before it was updated to include timing
+as a requirement.
+Sorry.
+But it took me around 25 minutes.
+"""
+
 word_to_count = {}
 
 text = input("Text: ")
