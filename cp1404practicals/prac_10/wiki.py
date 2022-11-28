@@ -10,5 +10,5 @@ while search != '':
 
     except wikipedia.exceptions.DisambiguationError as e:
         print(e.options)
-    search = input("Enter page title: ")
+    search = input("Enter page title: ") 
 
