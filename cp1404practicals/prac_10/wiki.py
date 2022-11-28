@@ -1,7 +1,7 @@
 import wikipedia
 
 search = input("Enter page title: ")
-wiki_page = wikipedia.page(search)
+wiki_page = wikipedia.page(search, auto_suggest=False)
 while search != '':
     try:
         print(wiki_page.title)
